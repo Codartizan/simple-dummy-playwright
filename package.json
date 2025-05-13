@@ -1,0 +1,27 @@
+{
+    "name": "playwright-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test:chrome": "npx playwright test --project=chromium",
+        "test:firefox": "npx playwright test --project=firefox",
+        "test:safari": "npx playwright test --project=webkit",
+        "test:api": "npx playwright test --project=chromium --config=api.config.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.44.0",
+        "lighthouse": "^12.0.0",
+        "playwright-lighthouse": "^4.0.0",
+        "prettier": "^3.2.5"
+    },
+    "dependencies": {
+        "csv-parse": "^5.5.6",
+        "csv-stringify": "^6.5.0",
+        "playwright": "^1.49.0",
+        "typescript": "^5.8.3"
+    }
+}
